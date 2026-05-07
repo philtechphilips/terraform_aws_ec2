@@ -1,0 +1,51 @@
+# Terraform state
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Terraform plan output
+*.tfplan
+*.plan
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+!example.tfvars.json
+
+# SSH keys and private keys
+*dovekey
+*dovekey.pub
+*testkey
+*testkey.pub
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Crash log
+crash.log
+crash.*.log
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+vars.tf
+private_ip.txt
